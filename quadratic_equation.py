@@ -1,20 +1,12 @@
-from fontTools.misc.cython import returns
-from mpmath.math2 import math_sqrt
-from sympy import symbols, Eq, solve
-import math
-import cmath
+import cmath, math
 
 
-x = symbols('x')
 print(f"Введите индекс a (записывайте вместе со знаком)*: ", end="")
-a = input()
-a = int(a)
+a = int(input())
 print(f"Введите индекс b (записывайте вместе со знаком)*: ", end="")
-b = input()
-b = int(b)
+b = int(input())
 print(f"Введите индекс c (записывайте вместе со знаком)*: ", end="")
-c = input()
-c = int(c)
+c = int(input())
 
 D = b**2-4*a*c
 print("Дискриминант равен:", D)
@@ -32,7 +24,6 @@ if D < 0:
 
     if yn == "2":
         print("Уравнение нерешаемо (без использования комплексных чисел)")
-
 
 if (D > 0):
     print("Квадратный корень из дискриминанта равен: ", (math.sqrt(D)))
